@@ -1,0 +1,431 @@
+/*CSS general de elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #222;
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+   
+}
+
+h1{
+    
+    color: rgb(107, 95, 240);
+    font-size: 35px;
+    font-weight: 5000px;
+    font-style: bold;
+   line-height: 40px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 1000;
+    line-height: 35px;
+}
+nav ul{
+    display: inline-block;
+     list-style: none;
+    font-weight: bold;
+    
+}
+nav ul li{
+    
+    padding-top: 12px;
+     float: left 
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: #20232a;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+section{
+     padding-left: 100px;
+    padding: 10 100px 10px 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button{
+    border-radius: 10px;
+}
+
+
+/*el texto hasta ahora*/
+p{
+    color: rgba(255, 255, 255, 0.871);
+    text-align: justify;
+}
+
+cite{
+    font-weight: 1000;
+}
+strong{
+    font-weight: bold;
+}
+i{
+    font-size: 25px;
+}
+i:hover{
+    color: rgb(107, 95, 240);
+}
+a{
+    text-decoration: none;
+    
+}
+
+a:-webkit-any-link {
+    color: white;
+}
+
+a:-moz-any-link {
+    color: white;
+    display: flex;
+}
+
+a:any-link {
+    color: white;
+}
+a:hover{
+    color: rgb(107, 95, 240);
+}
+
+li{
+    display: inline-block;
+    margin-right:4px;
+    margin:5px;
+}
+li img{
+    width: 60px;
+    height: 60px;
+}
+
+nav ul li a{
+    color: rgb(227, 156, 49);
+}
+
+.masinfo button{
+     background-color: rgb(46, 46, 163);
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    
+}
+
+
+/*el texto hasta aqui*/
+
+/*CSS IDS Y CLASE*/
+#sobre {
+    
+    background-color: #0c1c4154;
+    
+}
+#portafolio{
+    background-color: #140d236a;
+   
+    padding-top: 2%;
+}
+
+#tagsmias{
+    padding-top: 5px;
+    color: rgb(107, 95, 240);;
+    font-size: 20px
+    
+}
+#inicio-pag{
+    
+    background-image: url("../imagenes/hola.jpg");
+    min-height: 350px;
+    background-size: cover;
+    padding-top: 65px;
+    
+}
+
+#aboutme{
+    padding-top: 60px;
+    
+}
+#experiencia{
+    background-color: #0c1c4154;
+}
+#social-media{
+    list-style: none;
+    margin-top: 20px;
+}
+#logonav{
+    padding: 0px;
+    margin: 0px;
+}
+#projectstext{
+    padding-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+#portatitulo{
+    text-align: center;
+}
+#skillstitulo{
+     text-align: center;
+}
+#experienciatitulo{
+    text-align: center;
+}
+#skills{
+    background-color: #0c1c4154;
+}
+#contact{
+    
+background-color: #140d236a;
+padding-bottom: 100px;
+}
+#contact h2{
+    padding-bottom: 10px;
+}
+#contact h3{
+    padding-bottom: 30px;
+}
+
+.portfolio-gradient-divider {
+    height: 100px; 
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, #140d236a,#0c1c4154); 
+   
+}
+.inicio-gradient-divider {
+      height: 60px; 
+       padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, rgba(12, 28, 65, 0.33),#140d236a); 
+   
+}
+.contact-gradient-divider {
+      height: 60px; 
+       padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, rgba(12, 28, 65, 0.33),#140d236a); 
+   
+}
+
+/*CSS IDS Y CLASE FIN*/
+/*Grid sobreme*/
+#sobre{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    flex-wrap: wrap;
+}
+#sobre h1{
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+#sobreh2{
+    margin-bottom: 15px;
+}
+#sobre .masinfo{
+    margin-top: 15px;
+}
+#sobre .masinfo button{
+    background-color: rgb(46, 46, 163);
+    font-weight: 600;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    margin-top: 5px;
+    float: left;
+}
+/*Fin grid SOBREME*/
+
+/*Card Portfolio*/
+
+.filaportfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 30px;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+}
+.card{
+    width: 250px;
+    background-color: #20232a;
+    border-radius: 15px;
+}
+.card img{
+    border-radius: 15px 15px 0 0;
+}
+.card h3{
+    color: rgb(107, 95, 240);
+}
+.card h4{
+    margin: 0 5px 5px 0;
+}
+.card .masinfo{
+    margin: 15px 0px 15px 0px;
+    height: 21px;
+}
+.card .masinfo button{
+    background-color: rgb(46, 46, 163);
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+    margin: 1px;
+}
+
+.card .sep{
+    border: 0.5px solid rgb(149, 143, 247);
+    margin: 0 5px 5px 0;
+}
+
+.card h3,.card h4,.card p, .masinfo {
+    padding-top: 7px;
+    padding-bottom: 7;
+    text-align: center;
+
+}
+.card button{
+    padding: 2px;
+    padding-top: 5px;
+}
+
+/*Card portfolio FIN*/
+
+/*Card Skills*/
+#skills{
+    padding-bottom: 100px;
+}
+
+.gridexp{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.cardexp{
+    width: 100px;
+    background-color: rgb(67, 67, 124);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+     flex-direction: column;
+    margin-top: 30px;
+    padding: 20px;
+}
+.cardexp li{
+    padding-top: 10px;
+   height: 25px;
+}
+.cardexp li img{
+    width: 25px;
+}
+
+@media (max-width: 600px) { 
+  .gridexp {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+@media (max-width: 768px) { 
+  .gridexp {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) { 
+  .gridexp {
+    grid-template-columns: 1fr;
+  }
+}
+/*FIN SKILLS*/
+
+/*Card Experiencia*/
+
+.gridresum{
+     display: grid;
+     grid-gap: 40px;
+      max-width: 600px;
+      grid-template-columns: 1fr;
+     margin: 40px auto;
+}
+
+.gridresum h4{
+    margin-left: 60px;
+
+
+}
+.gridresum p{
+     margin-left: 60px;
+    margin-top: 10px;
+
+}
+
+#experiencia{
+    padding-bottom: 100px;
+}
+
+.gridresum h3{
+    margin: 10px 20px 10px;
+
+}
+.gridresum h3#certifications ~ h4 {
+  margin-top: 20px
+}
+.cardresum{
+   
+    background-color: rgb(67, 67, 124);
+     border-radius: 20px;
+    max-width: 553px;
+    display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     padding-bottom: 10px;
+     padding-right: 10px;
+}
+
+.cardresum ul{
+    display: flex;
+    justify-content: flex-start
+}
+/*Card Experiencia FIN*/
+
+/*Formulario CONTACT*/
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: left;
+    margin-bottom: 10px;
+    margin-left: 300px;
+}
+.itemform label{
+    font-weight: 700;
+}
+.itemform input,.itemform textarea{
+    border-radius: 5px;
+    border: 1px solid  rgb(71, 71, 171) ;
+}
+input[type= "submit"]{
+    background-color:   rgb(71, 71, 171) ;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+
